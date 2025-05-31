@@ -82,6 +82,52 @@ section {
   transform: scale(1.05);
 }
 
+.card.servicio1 {
+  background: url('../img/soporte-informatico.png') center center / cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+.card.servicio2 {
+  background: url('../img/electricidad.jpeg') center center / cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+.card.servicio3 {
+  background: url('../img/cctv.jpeg') center center / cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+.card.servicio4 {
+  background: url('../img/web.jpeg') center center / cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+.card.servicio1::before,
+.card.servicio2::before,
+.card.servicio3::before,
+.card.servicio4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+
+.card.servicio1 .card-body,
+.card.servicio2 .card-body,
+.card.servicio3 .card-body,
+.card.servicio4 .card-body {
+  position: relative;
+  z-index: 1;
+}
+
 footer {
   background-color: #212529;
   color: white;
